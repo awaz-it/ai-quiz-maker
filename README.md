@@ -56,6 +56,5 @@ Notes
   to build questions and distractors. It is designed to be explainable and easy to read.
 
 Extensions (optional)
-- Add a GUI using tkinter
 - Export quiz to PDF or TXT
 - Add randomized ordering or scoring/interactive quiz play
