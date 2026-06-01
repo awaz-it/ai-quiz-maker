@@ -1,0 +1,4 @@
+nltk==3.8.1
+
+# Note: NLTK will download small data packages (punkt, averaged_perceptron_tagger, stopwords)
+# when you run the scripts for the first time.

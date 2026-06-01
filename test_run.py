@@ -1,0 +1,18 @@
+"""
+Test runner that feeds sample notes to main.py and captures output.
+"""
+import subprocess
+import sys
+
+sample_notes = """A router is a networking device that forwards data packets between computer networks. Routers examine the destination IP address of a packet and use routing tables to determine the best path to send the packet. The Internet Protocol (IP) is the primary protocol used for routing. Routers operate at the Network Layer (Layer 3) of the OSI model. Modern routers also provide security features like firewalls and Network Address Translation (NAT). Ethernet is a common technology used in Local Area Networks (LANs). A gateway is a node that serves as an endpoint in a network or communication between networks. TCP/IP is the fundamental protocol suite for the Internet. The Domain Name System (DNS) translates domain names to IP addresses. A switch is similar to a router but operates at Layer 2 (Data Link Layer) and forwards frames within a LAN.
+END"""
+
+result = subprocess.run(
+    [sys.executable, "main.py"],
+    input=sample_notes,
+    text=True,
+    capture_output=False,
+    cwd="."
+)
+
+sys.exit(result.returncode)

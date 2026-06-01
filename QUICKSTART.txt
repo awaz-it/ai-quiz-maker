@@ -1,0 +1,131 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║           AI QUIZ MAKER - QUICK START GUIDE (Windows)                   ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📍 PROJECT LOCATION:
+   c:\Users\WAZ\Desktop\rojeen ai\ai_quiz_maker
+
+🚀 EASIEST WAY TO RUN (RECOMMENDED):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  FIRST TIME SETUP (One-time only):
+   
+   • Open PowerShell as Administrator
+   • Go to the project folder:
+     cd "c:\Users\WAZ\Desktop\rojeen ai\ai_quiz_maker"
+   
+   • Install requirements:
+     pip install -r requirements.txt
+   
+   ✓ Done! Now you can run it anytime.
+
+2️⃣  AFTER SETUP - Run GUI Every Time:
+
+   Option A: EASIEST - Double-click this file:
+   ┌─────────────────────────────────────────┐
+   │ START_GUI.bat                           │
+   │ (Located in the project folder)         │
+   └─────────────────────────────────────────┘
+   
+   Option B: Use Terminal:
+   cd "c:\Users\WAZ\Desktop\rojeen ai\ai_quiz_maker"
+   python gui.py
+
+3️⃣  ALTERNATIVE - Run CLI Version:
+
+   Option A: Double-click this file:
+   ┌─────────────────────────────────────────┐
+   │ START_CLI.bat                           │
+   │ (Located in the project folder)         │
+   └─────────────────────────────────────────┘
+   
+   Option B: Use Terminal:
+   cd "c:\Users\WAZ\Desktop\rojeen ai\ai_quiz_maker"
+   python main.py
+
+
+📋 WHAT FILES DO WHAT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+START_GUI.bat           ← Double-click to launch GUI (RECOMMENDED!)
+START_CLI.bat           ← Double-click to launch Terminal version
+gui.py                  ← GUI version (fancy window interface)
+main.py                 ← CLI version (terminal interface)
+quiz_generator.py       ← Creates the quiz questions
+utils.py                ← NLP helper functions
+requirements.txt        ← Python dependencies
+
+
+💡 RECOMMENDED WORKFLOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Double-click START_GUI.bat
+2. A window opens with two panels
+3. Paste your lecture notes in the LEFT panel
+4. Click "Generate Quiz"
+5. View questions in the RIGHT panel
+6. Switch between MCQ, True/False, Fill-blank with tabs
+7. Navigate with Previous/Next buttons
+8. Click "Export JSON" to save your quiz
+9. Close the window when done
+
+
+⚙️ SETUP VERIFICATION (Check if everything is installed):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open PowerShell and run:
+   python -m pip list | findstr nltk
+
+You should see: nltk                        3.8.1
+If yes ✓ - You're ready!
+If no ✗ - Run: pip install nltk
+
+
+🎓 USAGE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GUI Version (gui.py):
+   ✓ Paste notes → Click Generate → View questions → Export JSON
+   ✓ Best for: Easy, visual learning experience
+
+CLI Version (main.py):
+   ✓ Paste notes → Type END → View in terminal → Export JSON
+   ✓ Best for: Quick testing, scripting
+
+
+📁 FILE LOCATIONS TO REMEMBER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Project Folder:
+   c:\Users\WAZ\Desktop\rojeen ai\ai_quiz_maker
+
+Output Files (created when you export):
+   quiz_output.json (saved in current folder)
+
+
+❓ TROUBLESHOOTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "python command not found"
+Solution: 
+   • Add Python to PATH
+   • Or use full path: "c:\Users\WAZ\AppData\Local\Programs\Python\Python313\python.exe" gui.py
+
+Problem: START_GUI.bat doesn't work
+Solution:
+   • Right-click START_GUI.bat → Run as Administrator
+
+Problem: "nltk_data" download error
+Solution:
+   • This is normal on first run
+   • The script automatically downloads needed data
+   • Just wait a moment
+
+
+✨ NEXT TIME YOU WANT TO RUN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Just double-click:  START_GUI.bat
+
+That's it! The window opens, you paste notes, generate quiz, done! 🎉
+
